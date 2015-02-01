@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1l6-Yh-7ac">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Playlist Master View Controller-->
+        <!--Playlists-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="PlaylistMasterViewController" customModule="Algorhythm" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,32 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="1Fb-jS-XRB">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Bxq-Cm-aUX"/>
+                                    <constraint firstAttribute="height" constant="200" id="Ccn-hx-M7U"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5n-mg-Lup">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.98835819960000004" green="0.35373812910000002" blue="0.3761391342" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jMs-Qc-5be" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lRY-HJ-1Qv"/>
+                                    <segue destination="jMs-Qc-5be" kind="push" identifier="showPlaylistDetail" id="lRY-HJ-1Qv"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99859368800000003" green="0.93659985069999996" blue="0.83961439130000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="l5n-mg-Lup" secondAttribute="centerY" id="PV6-a9-Lny"/>
+                            <constraint firstAttribute="centerX" secondItem="1Fb-jS-XRB" secondAttribute="centerX" id="FAd-Ym-scD"/>
+                            <constraint firstItem="l5n-mg-Lup" firstAttribute="top" secondItem="1Fb-jS-XRB" secondAttribute="bottom" constant="8" id="IIa-9G-p3j"/>
                             <constraint firstAttribute="centerX" secondItem="l5n-mg-Lup" secondAttribute="centerX" id="uue-fP-pXQ"/>
+                            <constraint firstAttribute="centerY" secondItem="1Fb-jS-XRB" secondAttribute="centerY" id="zZo-iz-WuD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Playlists" id="VZq-3g-WWX"/>
                     <connections>
                         <outlet property="aButton" destination="l5n-mg-Lup" id="8s8-JO-G9k"/>
+                        <outlet property="playlistImageView0" destination="1Fb-jS-XRB" id="vVZ-zY-eKo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234.66666666666666" y="406.12"/>
+            <point key="canvasLocation" x="766" y="406"/>
         </scene>
-        <!--Playlist Detail View Controller-->
+        <!--Artists-->
         <scene sceneID="wd2-ra-STV">
             <objects>
                 <viewController id="jMs-Qc-5be" customClass="PlaylistDetailViewController" customModule="Algorhythm" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,14 +62,51 @@
                     <view key="view" contentMode="scaleToFill" id="AId-Z8-pQo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.98835819960000004" green="0.35373812910000002" blue="0.3761391342" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlj-Ib-LRZ">
+                                <rect key="frame" x="40" y="273" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="xlj-Ib-LRZ" secondAttribute="centerY" constant="0.5" id="lwG-y3-QT5"/>
+                            <constraint firstAttribute="centerX" secondItem="xlj-Ib-LRZ" secondAttribute="centerX" id="wcS-Pj-Wco"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Artists" id="pHi-FH-EU8"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="xlj-Ib-LRZ" id="FZy-At-FS5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Er-do-pj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="406"/>
+            <point key="canvasLocation" x="1124" y="406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s3h-Mj-xAb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1l6-Yh-7ac" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fyc-In-hBN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Vwi-Cd-gP1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEN-dL-fZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="406"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="66" height="73"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

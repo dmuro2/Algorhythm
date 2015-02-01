@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AAACCAE1-7387-4552-8C1D-1C33C4481E98</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Algorhythm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>38E7207326593BB5E18C3BE3DA3AC09B84D09C90</key>
+		<string>https://github.com/dmuro2/Algorhythm.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Algorhythm/Algorhythm.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>38E7207326593BB5E18C3BE3DA3AC09B84D09C90</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dmuro2/Algorhythm.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>38E7207326593BB5E18C3BE3DA3AC09B84D09C90</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>38E7207326593BB5E18C3BE3DA3AC09B84D09C90</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Algorhythm</string>
+		</dict>
+	</array>
+</dict>
+</plist>

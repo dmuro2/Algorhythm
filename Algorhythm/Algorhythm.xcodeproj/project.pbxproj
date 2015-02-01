@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55823FCF1A7EC6D600479760 /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADFB7B1A73505B00FD9D91 /* PlaylistDetailViewController.swift */; };
+		55823FD11A7ECA7B00479760 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55823FD01A7ECA7B00479760 /* MusicLibrary.swift */; };
+		55823FD31A7ECB6600479760 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55823FD21A7ECB6500479760 /* Playlist.swift */; };
 		55ADFB5C1A734E4B00FD9D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADFB5B1A734E4B00FD9D91 /* AppDelegate.swift */; };
 		55ADFB5E1A734E4B00FD9D91 /* PlaylistMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADFB5D1A734E4B00FD9D91 /* PlaylistMasterViewController.swift */; };
 		55ADFB611A734E4B00FD9D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55ADFB5F1A734E4B00FD9D91 /* Main.storyboard */; };
 		55ADFB631A734E4B00FD9D91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55ADFB621A734E4B00FD9D91 /* Images.xcassets */; };
 		55ADFB661A734E4B00FD9D91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55ADFB641A734E4B00FD9D91 /* LaunchScreen.xib */; };
 		55ADFB721A734E4B00FD9D91 /* AlgorhythmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADFB711A734E4B00FD9D91 /* AlgorhythmTests.swift */; };
-		55ADFB7C1A73505B00FD9D91 /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADFB7B1A73505B00FD9D91 /* PlaylistDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55823FD01A7ECA7B00479760 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
+		55823FD21A7ECB6500479760 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		55ADFB561A734E4B00FD9D91 /* Algorhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55ADFB5A1A734E4B00FD9D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55ADFB5B1A734E4B00FD9D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				55ADFB5B1A734E4B00FD9D91 /* AppDelegate.swift */,
 				55ADFB5D1A734E4B00FD9D91 /* PlaylistMasterViewController.swift */,
 				55ADFB7B1A73505B00FD9D91 /* PlaylistDetailViewController.swift */,
+				55823FD01A7ECA7B00479760 /* MusicLibrary.swift */,
+				55823FD21A7ECB6500479760 /* Playlist.swift */,
 				55ADFB5F1A734E4B00FD9D91 /* Main.storyboard */,
 				55ADFB621A734E4B00FD9D91 /* Images.xcassets */,
 				55ADFB641A734E4B00FD9D91 /* LaunchScreen.xib */,
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55ADFB7C1A73505B00FD9D91 /* PlaylistDetailViewController.swift in Sources */,
+				55823FCF1A7EC6D600479760 /* PlaylistDetailViewController.swift in Sources */,
 				55ADFB5E1A734E4B00FD9D91 /* PlaylistMasterViewController.swift in Sources */,
 				55ADFB5C1A734E4B00FD9D91 /* AppDelegate.swift in Sources */,
+				55823FD11A7ECA7B00479760 /* MusicLibrary.swift in Sources */,
+				55823FD31A7ECB6600479760 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				55ADFB771A734E4B00FD9D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55ADFB781A734E4B00FD9D91 /* Build configuration list for PBXNativeTarget "AlgorhythmTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				55ADFB7A1A734E4B00FD9D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
